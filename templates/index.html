@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zomato Restaurant Predictor</title>
+</head>
+<body>
+    <h1>Zomato Restaurant Predictor</h1>
+    <form method="POST">
+        <label>Online Order:</label>
+        <select name="online_order">
+            <option value="Yes" >Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label>Book Table:</label>
+        <select name="book_table">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label>Rate:</label>
+        <input type="number" step="0.1" name="rate" required><br>
+
+        <label>Votes:</label>
+        <input type="number" name="votes" required><br>
+
+        <label>Approx Cost (for two people):</label>
+        <input type="number" name="approx_cost" required><br>
+
+        <label>Restaurant Type:</label>
+        <input type="text" name="rest_type" required><br>
+
+        <label>Listed In (Type):</label>
+        <input type="text" name="listed_in_type" required><br>
+
+        <label>Listed In (City):</label>
+        <input type="text" name="listed_in_city" required><br>
+
+        <label>Number of Cuisines:</label>
+        <input type="number" name="num_cuisines" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
